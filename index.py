@@ -19,6 +19,7 @@ async def on_ready():
         activity=discord.Game(f'{cli}개의 서버가 저를 사용하고 있어요!'))
         await asyncio.sleep(3)
         cli = len(client.guilds)
+
         
       
 @client.event
@@ -70,5 +71,5 @@ async def on_message(message):
         await message.channel.send(embed=embed)
         await message.add_reaction("👍") #stun
        
- 
-client.run('ODAwMTc0MTk1MTE1Mjk0Nzcw.YAOSSg.p9vmHGF4a-h_ff5mpEU5_3Lw170')    
+access_token = os.environ["BOT_TOKEN"]
+client.run('acces_token')    
